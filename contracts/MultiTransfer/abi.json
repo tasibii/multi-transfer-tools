@@ -1,0 +1,281 @@
+[
+    {
+        "inputs": [],
+        "name": "MultiTransfer_InsufficientBalance",
+        "type": "error"
+    },
+    {
+        "inputs": [],
+        "name": "MultiTransfer_LengthMismatch",
+        "type": "error"
+    },
+    {
+        "inputs": [],
+        "name": "Ownable__NonZeroAddress",
+        "type": "error"
+    },
+    {
+        "inputs": [],
+        "name": "Ownable__Unauthorized",
+        "type": "error"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "previousOwner",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "newOwner",
+                "type": "address"
+            }
+        ],
+        "name": "OwnershipTransferred",
+        "type": "event"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "operator_",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "contract IPermit2",
+                "name": "from_",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "contract IPermit2",
+                "name": "to_",
+                "type": "address"
+            }
+        ],
+        "name": "Permit2Changed",
+        "type": "event"
+    },
+    {
+        "inputs": [
+            {
+                "components": [
+                    {
+                        "internalType": "address",
+                        "name": "token",
+                        "type": "address"
+                    },
+                    {
+                        "internalType": "address",
+                        "name": "spender",
+                        "type": "address"
+                    },
+                    {
+                        "internalType": "uint48",
+                        "name": "deadline",
+                        "type": "uint48"
+                    },
+                    {
+                        "internalType": "address[]",
+                        "name": "addresses",
+                        "type": "address[]"
+                    }
+                ],
+                "internalType": "struct IMultiTransfer.PermitDetail",
+                "name": "details_",
+                "type": "tuple"
+            },
+            {
+                "components": [
+                    {
+                        "internalType": "uint8",
+                        "name": "v",
+                        "type": "uint8"
+                    },
+                    {
+                        "internalType": "bytes32",
+                        "name": "r",
+                        "type": "bytes32"
+                    },
+                    {
+                        "internalType": "bytes32",
+                        "name": "s",
+                        "type": "bytes32"
+                    }
+                ],
+                "internalType": "struct IMultiTransfer.Signature[]",
+                "name": "signatures_",
+                "type": "tuple[]"
+            }
+        ],
+        "name": "multiPermit",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "components": [
+                    {
+                        "internalType": "address",
+                        "name": "token",
+                        "type": "address"
+                    },
+                    {
+                        "internalType": "address",
+                        "name": "spender",
+                        "type": "address"
+                    },
+                    {
+                        "internalType": "uint48",
+                        "name": "deadline",
+                        "type": "uint48"
+                    },
+                    {
+                        "internalType": "address[]",
+                        "name": "addresses",
+                        "type": "address[]"
+                    }
+                ],
+                "internalType": "struct IMultiTransfer.PermitDetail",
+                "name": "details_",
+                "type": "tuple"
+            },
+            {
+                "internalType": "uint48",
+                "name": "nonce_",
+                "type": "uint48"
+            },
+            {
+                "internalType": "bytes[]",
+                "name": "signatures_",
+                "type": "bytes[]"
+            }
+        ],
+        "name": "multiPermit2",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "token_",
+                "type": "address"
+            },
+            {
+                "internalType": "address[]",
+                "name": "addresses_",
+                "type": "address[]"
+            },
+            {
+                "internalType": "uint256",
+                "name": "amount_",
+                "type": "uint256"
+            }
+        ],
+        "name": "multiTransferERC20",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address[]",
+                "name": "addresses_",
+                "type": "address[]"
+            }
+        ],
+        "name": "multiTransferETH",
+        "outputs": [],
+        "stateMutability": "payable",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "owner",
+        "outputs": [
+            {
+                "internalType": "address",
+                "name": "_owner",
+                "type": "address"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "permit2",
+        "outputs": [
+            {
+                "internalType": "contract IPermit2",
+                "name": "",
+                "type": "address"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "renounceOwnership",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "contract IPermit2",
+                "name": "permit2_",
+                "type": "address"
+            }
+        ],
+        "name": "setPermit2",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "newOwner",
+                "type": "address"
+            }
+        ],
+        "name": "transferOwnership",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "token_",
+                "type": "address"
+            },
+            {
+                "internalType": "uint96",
+                "name": "amount_",
+                "type": "uint96"
+            }
+        ],
+        "name": "withdraw",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    }
+]

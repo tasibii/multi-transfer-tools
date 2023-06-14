@@ -1,0 +1,56 @@
+{
+  "ChainIds": [
+    "5",
+    "43113",
+    "80001",
+    "421613",
+    "97"
+  ],
+  "ChainConfigs": {
+    "ethereum": {
+      "rpc": "",
+      "freeRpc": "https://rpc.ankr.com/eth_goerli",
+      "usdcAddress": "0x3AfB052aD80637a3e979a935Bd784e3E07D258d3",
+      "name": "goerli ethereum",
+      "chainId": "5",
+      "usdcSymbol": "USDC",
+      "usdcDecimals": 6
+    },
+    "avalanche": {
+      "rpc": "",
+      "freeRpc": "https://avalanche-fuji-c-chain.publicnode.com",
+      "usdcAddress": "0x3AfB052aD80637a3e979a935Bd784e3E07D258d3",
+      "name": "",
+      "chainId": "43113",
+      "usdcSymbol": "USDC",
+      "usdcDecimals": 6
+    },
+    "polygon": {
+      "rpc": "",
+      "freeRpc": "https://polygon-mumbai.blockpi.network/v1/rpc/public",
+      "usdcAddress": "0x3AfB052aD80637a3e979a935Bd784e3E07D258d3",
+      "name": "",
+      "chainId": "80001",
+      "usdcSymbol": "USDC",
+      "usdcDecimals": 6
+    },
+    "arbitrum": {
+      "rpc": "",
+      "freeRpc": "https://arbitrum-goerli.public.blastapi.io",
+      "usdcAddress": "0x3AfB052aD80637a3e979a935Bd784e3E07D258d3",
+      "name": "",
+      "chainId": "421613",
+      "usdcSymbol": "USDC",
+      "usdcDecimals": 6
+    },
+    "bnb": {
+      "rpc": "",
+      "freeRpc": "https://bsc-testnet.publicnode.com",
+      "usdcAddress": "0x3AfB052aD80637a3e979a935Bd784e3E07D258d3",
+      "name": "",
+      "chainId": "97",
+      "usdcSymbol": "USDC",
+      "usdcDecimals": 6
+    }
+  }
+}
